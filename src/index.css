@@ -23,12 +23,14 @@ a:hover {
 }
 
 body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  display: block; /* Remove flex */
+  color: white;
 }
+
 
 h1 {
   font-size: 3.2em;
@@ -66,3 +68,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white; /* Adjust text color for better visibility */
+}
+
