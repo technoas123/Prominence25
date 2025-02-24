@@ -7,6 +7,8 @@ import Events from "./components/Events";
 import About from "./components/About";
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import CarouselGallery from "./components/CarouselGallery"
+import Sponsors from "./components/Sponsors"
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <HeroSection />
         <Events />
         <About />
+        <CarouselGallery />
         <Contact />
         <Footer />
       </div>

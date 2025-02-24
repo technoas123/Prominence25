@@ -24,14 +24,11 @@ const Footer = () => {
         <div className="footer-social">
           <p>Follow Us:</p>
           <div className="social-icons">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/prominence_25_/" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-linkedin"></i>
+            <a href="https://whatsapp.com/channel/0029VaLVTmtATRSsgKeIT10L" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-whatsapp"></i>
             </a>
           </div>
           <p>📍 RIT Kottayam, Kerala</p>

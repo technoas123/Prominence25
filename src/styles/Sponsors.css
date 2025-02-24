@@ -1,0 +1,32 @@
+.sponsor-section{
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.sponsor-heading{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sponsor-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sponsor-logo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sponsor-name{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}

@@ -1,31 +1,22 @@
 import React from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Box } from "@react-three/drei";
-import "../styles/HeroSection.css"
+import "../styles/Hero.css";
+import Robot from "./Robot";
 
 const HeroSection = () => {
   return (
     <div className="hero-container">
+      {/* Particle Background remains as is */}
       <div className="hero-content">
         <h1 className="hero-title">Prominence</h1>
-        <p className="hero-tagline">Where Innovation Meets Imagination.</p>
-        <button className="hero-button">Know More</button>
+        <p className="hero-subtitle">Connect Innovate Inspire</p>
+        <button className="hero-cta">Explore Now</button>
       </div>
-
-      {/* 3D Cube */}
-      <div className="hero-3d">
-        <Canvas>
-          <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={2} />
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[2, 5, 2]} intensity={1} />
-          <Box args={[1.5, 1.5, 1.5]}>
-            <meshStandardMaterial color="cyan" wireframe />
-          </Box>
-        </Canvas>
+      {/* 3D Hologram Planet */}
+      <div className="hero-planet">
+        <Robot />
       </div>
-
-      {/* Scroll Indicator */}
-      <div className="scroll-indicator">↓</div>
+      {/* Scroll Down Indicator */}
+      <div className="scroll-down">&#8595;</div>
     </div>
   );
 };

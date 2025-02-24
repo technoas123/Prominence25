@@ -47,7 +47,10 @@ body, html {
 
 /* Social Media Fix */
 .footer-social {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
 }
 
 .social-icons {

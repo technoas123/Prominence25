@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import events from "../data/events"; // Import event data
-import "../styles/Events.css"
+import "../styles/Events.css";
 
 const Events = () => {
   const [activeEvent, setActiveEvent] = useState(null);
+
+  // Sort events by ID in descending order (latest first)
+  const sortedEvents = [...events].sort((a, b) => b.id - a.id);
 
   return (
     <div className="events-section">
       <h1>Events</h1>
       <div className="events-list">
-        {events.map((event) => (
+        {sortedEvents.slice(0, 4).map((event) => ( // Show only the latest 4 events
           <div
             key={event.id}
             className="event-card"
@@ -32,6 +35,11 @@ const Events = () => {
           </div>
         ))}
       </div>
+
+      {/* View More Button */}
+      <a href="/events" className="view-more-btn">
+        View More
+      </a>
     </div>
   );
 };
