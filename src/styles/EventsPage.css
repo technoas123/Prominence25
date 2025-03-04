@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #eee;
+  font-family: Poppins;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+header a {
+  color: #eee;
+  margin-right: 40px;
+}
+
+/* Carousel */
+.carousel {
+  height: 100vh;
+  margin-top: -50px;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .list .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0 0 0 0;
+  padding: 0 5%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.carousel .list .item.active {
+  opacity: 1; /* Show the active slide */
+  z-index: 2; /* Higher z-index for the active slide */
+}
+
+.carousel .list .item img {
+  width: 50%; /* Image takes 50% of the container width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 80vh; /* Limit height to 80% of viewport height */
+  object-fit: contain; /* Ensure the image fits without stretching */
+  margin-top: 15%; /* Move the image lower */
+  order: 1; /* Ensure image stays on the left */
+}
+
+.carousel .list .item .content {
+  width: 45%; /* Text content takes 45% of the container width */
+  max-width: 1500px;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 0 5px 10px #0004;
+  margin-top: -5%; /* Move the text lower */
+  order: 2; /* Ensure content stays on the right */
+  box-sizing: border-box;
+}
+
+.carousel .list .item .content .title {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: 20px; /* Add space below the title */
+}
+
+.carousel .list .item .content .des {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-height: 100px; /* Set a maximum height for the description */
+  line-height: 1.5;
+}
+
+.carousel .list .item .content .buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px; /* Add space above the buttons */
+}
+
+.carousel .list .item .buttons button {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  letter-spacing: 3px;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.carousel .list .item .buttons button:hover {
+  background-color: black;
+  color: white;
+}
+
+.carousel .list .item .buttons button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #eee;
+}
+
+/* Thumbnail */
+.thumbnail {
+  position: absolute;
+  bottom: 0px;
+  left: 70%;
+  transform: translateX(-50%); /* Center the thumbnails horizontally */
+  width: max-content;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for better visibility */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.thumbnail .item {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer; /* Add pointer cursor for better UX */
+}
+
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.thumbnail .item .content {
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.thumbnail .item .content .title {
+  font-weight: 500;
+}
+
+.thumbnail .item .content .description {
+  font-weight: 500;
+}
+
+/* Arrows */
+.arrows {
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  z-index: 100;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eee4;
+  border: none;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.arrows button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Running time */
+.carousel .time {
+  position: absolute;
+  z-index: 1000;
+  width: 0%;
+  height: 3px;
+  background-color: #f1683a;
+  left: 0;
+  top: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time {
+  animation: runningTime 3s linear 1 forwards;
+}
+
+@keyframes runningTime {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+/* Prev click */
+.carousel.prev .list .item:nth-child(2) {
+  z-index: 2;
+}
+
+.carousel.prev .list .item:nth-child(2) img {
+  animation: outFrame 0.5s linear 1 forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes outFrame {
+  to {
+    width: 150px;
+    height: 220px;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 20px;
+  }
+}
+
+.carousel.prev .thumbnail .item:nth-child(1) {
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.carousel.next .arrows button,
+.carousel.prev .arrows button {
+  pointer-events: none;
+}
+
+.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .title,
+.carousel.prev .list .item:nth-child(2) .content .topic,
+.carousel.prev .list .item:nth-child(2) .content .des,
+.carousel.prev .list .item:nth-child(2) .content .buttons {
+  animation: contentOut 1.5s linear 1 forwards !important;
+}
+
+@keyframes contentOut {
+  to {
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .carousel .list .item {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+    align-items: center; /* Center items */
+    padding: 0 10px; /* Add padding for better spacing */
+    justify-content: flex-start; /* Align items to the top */
+    margin-top: 50px; /* Add margin to prevent overlap with navbar */
+  }
+
+  .carousel .list .item img {
+    width: 40%; /* Adjust image width for mobile */
+    height: auto;
+    max-height: 50vh; /* Reduce height for mobile */
+    margin-top: 110px; /* Move the image lower */
+    order: 1; /* Ensure image stays on top */
+    object-fit: cover; /* Ensure the image fits without stretching */
+  }
+
+  .carousel .list .item .content {
+    width: 100%; /* Full width on small screens */
+    padding: 10px;
+    margin-top: 10px; /* Move the content higher up */
+    text-align: center; /* Center text */
+  }
+
+  .carousel .list .item .content .title {
+    font-size: 2em; /* Smaller font size for mobile */
+    margin-bottom: 10px; /* Reduce space below the title */
+  }
+
+  .carousel .list .item .content .des {
+    font-size: 1em; /* Smaller font size for mobile */
+    margin-bottom: 20px; /* Reduce space below the description */
+    max-height: 100px; /* Limit height for description */
+    overflow-y: auto; /* Add scrollbar if needed */
+  }
+
+  .carousel .list .item .content .buttons {
+    justify-content: center; /* Center buttons */
+  }
+
+  /* Thumbnail adjustments for mobile */
+  .thumbnail {
+    bottom: -5px; /* Move thumbnails closer to the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center thumbnails horizontally */
+    width: 90%; /* Adjust width for mobile */
+    gap: 10px; /* Reduce gap between thumbnails */
+    padding: 5px; /* Reduce padding */
+  }
+
+  .thumbnail .item {
+    width: 100px; /* Reduce thumbnail width for mobile */
+    height: 150px; /* Reduce thumbnail height for mobile */
+  }
+
+  /* Arrow adjustments for mobile */
+  .arrows {
+    top: auto; /* Remove top positioning */
+    bottom: 20px; /* Position arrows at the bottom */
+    right: 50%;
+    transform: translateX(50%); /* Center arrows horizontally */
+    width: 100%; /* Full width for better accessibility */
+    justify-content: center; /* Center buttons */
+  }
+
+  .arrows button {
+    width: 35px; /* Reduce button size for mobile */
+    height: 35px;
+    font-size: 1em; /* Adjust font size for mobile */
+  }
+}

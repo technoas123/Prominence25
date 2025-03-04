@@ -1,0 +1,173 @@
+/* Ensure parent elements use full width */
+body, html, #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Event Details Container */
+  .event-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%; /* Ensure it uses full width */
+    max-width: 1200px; /* Optional: Limit maximum width */
+    margin: 2rem auto; /* Center the container */
+    padding: 1rem;
+    color: white; /* Ensure text is visible */
+    z-index: 10; /* Ensure it's above other elements */
+    position: relative; /* Ensure z-index works */
+    overflow: visible; /* Ensure content is not clipped */
+  }
+  
+  /* Event Poster */
+  .event-poster {
+    flex: 1; /* Takes 1 part of the available space */
+    max-width: 40%; /* Adjust as needed */
+    margin: 1rem; /* Add consistent spacing */
+  }
+  
+  .event-poster img {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
+  }
+  
+  .event-poster img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Event Content */
+  .event-content {
+    flex: 2; /* Takes 2 parts of the available space */
+    max-width: 60%; /* Adjust as needed */
+    margin: 1rem; /* Add consistent spacing */
+    text-align: left;
+    word-wrap: break-word; /* Ensure text wraps */
+    overflow-wrap: break-word; /* Ensure text wraps */
+  }
+  
+  .event-content h1 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .event-meta {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .event-description {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .event-details {
+    font-size: 1.2rem; /* Increase font size */
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    z-index: 100;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Buttons */
+  .register-button,
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Ensure buttons look clickable */
+  }
+  
+  .register-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .register-button:hover,
+  .register-button:focus {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    outline: 2px solid #007bff; /* Add focus state for accessibility */
+    outline-offset: 2px;
+  }
+  
+  .back-button {
+    background-color: black;
+    color: white;
+  }
+  
+  .back-button:hover,
+  .back-button:focus {
+    background-color: #5a6268;
+    transform: scale(1.05);
+    outline: 2px solid #6c757d; /* Add focus state for accessibility */
+    outline-offset: 2px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-details-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; /* Reduce gap for smaller screens */
+    }
+  
+    .event-poster,
+    .event-content {
+      max-width: 100%; /* Ensure full width on smaller screens */
+    }
+  
+    .event-content h1 {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .event-meta {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .event-description {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .event-details {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-content h1 {
+      font-size: 1.8rem; /* Further adjust font size for very small screens */
+    }
+  
+    .event-meta {
+      font-size: 0.9rem; /* Further adjust font size for very small screens */
+    }
+  
+    .event-description,
+    .event-details {
+      font-size: 0.9rem; /* Further adjust font size for very small screens */
+    }
+  
+    .register-button,
+    .back-button {
+      padding: 8px 16px; /* Adjust button padding for smaller screens */
+      font-size: 0.9rem; /* Adjust button font size for smaller screens */
+    }
+  }

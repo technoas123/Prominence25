@@ -1,0 +1,159 @@
+/* General Styles */
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    opacity: 1 !important; /* Ensure it's not transparent */
+    visibility: visible !important; /* Ensure it's not hidden */
+    display: block !important; /* Ensure it's not hidden by display */
+    z-index: 10; /* Ensure it's above other elements */
+    position: relative; /* Required for z-index to work */
+  }
+  
+  /* Hero Section */
+  .hero {
+    margin-top: 120px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("C:\Users\ahamm\OneDrive\Documents\MY PROJECTS\Prominence25\public\images\about.jpg"); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  /* Sections */
+  .our-story,
+  .our-mission,
+  .our-values,
+  .cta {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Values List */
+  .our-values ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .our-values li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Call-to-Action Section */
+  .cta {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .cta h2 {
+      font-size: 2rem;
+    }
+  
+    .cta p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 60px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    .cta h2 {
+      font-size: 1.8rem;
+    }
+  
+    .cta p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+  }

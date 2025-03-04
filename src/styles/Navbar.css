@@ -1,0 +1,114 @@
+/* Navbar Container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Inner Container */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* Logo Container */
+    .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 200px; /* Prevents logo & text from taking too much space */
+  }
+  
+  
+  /* Logo Image */
+  .logo-img {
+    height: 50px; /* Adjust based on preference */
+    width: auto;
+    max-width: 100px; /* Prevents it from being too large */
+    animation: blink-effect 2s infinite alternate; /* Blinking effect */
+  }
+  
+  /* Blinking Effect */
+  @keyframes blink-effect {
+    from {
+      filter: brightness(0.6);
+    }
+    to {
+      filter: brightness(1.4);
+    }
+  }
+  
+  /* Logo Text */
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background:white;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  /* Mobile Menu */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive for Mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: black;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 10px;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  }
+  

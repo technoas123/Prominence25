@@ -1,0 +1,47 @@
+.contact-info {
+    margin-top: 50px;
+}
+/* Contact Form Styles */
+.contact-form {
+    margin-top: 50px;
+    max-width: 300px; /* Limit the form width */
+    margin: 0 auto; /* Center the form */
+    border-radius: 50px;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px; /* Reduce spacing between fields */
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1rem; /* Smaller font size for labels */
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%; /* Full width but constrained by parent */
+    max-width: 400px; /* Limit the width of input fields */
+    padding: 8px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    height: 120px; /* Set a fixed height for the textarea */
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Smaller button */
+    font-size: 0.9rem; /* Smaller font size */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }

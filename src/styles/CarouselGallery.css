@@ -1,0 +1,92 @@
+/* Gallery Container */
+.carousel-gallery {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111; /* Dark background */
+    color: white; /* Ensure text color is visible */
+    overflow: hidden;
+    position: relative; /* Ensure proper positioning */
+    z-index: 1; /* Ensure it's above other elements */
+  }
+  
+  /* Main Heading */
+  .gallery-heading {
+    font-size: 2.5rem;
+    margin-top: -20px;
+    margin-bottom: 10px; /* Space below the main heading */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white; /* Ensure text color is visible */
+    position: relative; /* Ensure proper positioning */
+    z-index: 2; /* Ensure it's above other elements */
+    padding: 5px;
+  }
+  
+  /* Carousel Container */
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; /* Ensure it's below the headings */
+  }
+  
+  /* Carousel Track */
+  .carousel-track {
+    display: flex;
+    gap: 20px; /* Space between images */
+    width: max-content; /* Allow track to expand based on content */
+  }
+  
+  /* Carousel Item */
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 300px; /* Fixed width for each image */
+    height: 200px; /* Fixed height for each image */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container */
+    border-radius: 10px;
+  }
+  
+  .carousel-item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .carousel-item {
+      width: 250px; /* Smaller width for tablets */
+      height: 150px; /* Smaller height for tablets */
+    }
+  
+    .gallery-heading {
+      font-size: 2rem;
+    }
+  
+    .past-gallery-heading {
+      font-size: 1.5rem; /* Smaller font size for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-item {
+      width: 200px; /* Smaller width for mobile */
+      height: 120px; /* Smaller height for mobile */
+    }
+  
+    .gallery-heading {
+      font-size: 1.5rem;
+    }
+  
+    .past-gallery-heading {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+  }
