@@ -131,6 +131,17 @@ const events = [
       location: "Basketball Court",
       link: "https://forms.gle/p9K44Ki4rGQmMvN8A",
     },
+    {
+      id: 13,
+      title: "Basketball Tournament",
+      description:
+        "The hunt is on! Are you ready to uncover the secrets of the campus? 🧭",
+      content: "The hunt is on! Are you ready to uncover the secrets of the campus? 🧭 PROMINANCE 25 invites you to Embark on an Adventure filled with Riddles, Clues, and Mysteries 🔎 TREASURE HUNT 🔎 🕵‍♂Decode the Riddles | 🔑 Crack the Clues | 🏃‍♂ Race to Victory  🗓 Date: March 5, 2025   ⌚ Time:4.30PM  📌Venue: ECE Dept. 💰 Registration Fee: ₹80 🏆 Prize Pool: 800/- The Treasure is Hidden...Will you be the One to Claim it? 🏴‍☠🔥  💫 Do not Miss Out—Follow Us Now",
+      image: "/images/event12.jpg",
+      date: "March 05, 2025",
+      location: "RIT Kottayam",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScmkdxwcAelIrz4yPws-eUjQZar-hIzt8uOB5je56vP3aic4g/viewform?usp=dialogA",
+    },
 ];
 
 export default events;
