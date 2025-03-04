@@ -79,7 +79,7 @@ Want to contribute? Follow these steps:
 ## 📞 Contact
 📧 **Email**: [ahammedsalahuddeen@gmail.com](mailto:ahammedsalahuddeen@gmail.com)  
 🌐 **Website**: [(https://prominence25.vercel.app/)]((https://prominence25.vercel.app/))  
-📌 **Maintainers**: Ahammed Salahuddeen & Team
+📌 **Maintainers**: Website Team of Prominence
 
 ---
 🚀 *Built with ❤️ by Team Prominence 25*
