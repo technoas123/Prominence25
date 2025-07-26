@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import events from "../data/events"; // Adjust the path as needed
 import "../styles/EventDetails.css"; // Adjust the path as needed
@@ -7,11 +7,13 @@ const EventDetails = () => {
   const { id } = useParams(); // Get the event ID from the URL
   const event = events.find((event) => event.id === parseInt(id)); // Find the event by ID
 
-  if (!event) {
-    return <div><h2>Event Not Found!</h2></div>; // Handle case where event is not found
-  }
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
-  console.log("Event Content:", event.content); // Debugging line
+  if (!event) {
+    return <div><h2>Event Not Found!</h2></div>;
+  }
 
   return (
     <div className="event-details-container">
@@ -21,10 +23,12 @@ const EventDetails = () => {
       <div className="event-content">
         <h1>{event.title}</h1>
         <p className="event-meta">
-          <strong>Date:</strong> {event.date} | <strong>Location:</strong> {event.location}
+          <strong>Date:</strong> {event.date} 
+          <br />
+         <strong>Location:</strong> {event.location}
         </p>
-        <p className="event-description">{event.description}</p>
         <p className="event-content">{event.content}</p>
+        <br />
         <a
           href={event.link}
           target="_blank"

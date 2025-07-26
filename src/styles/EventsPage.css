@@ -30,12 +30,15 @@ header a {
 
 /* Carousel */
 .carousel {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+  margin-bottom: 0;
   margin-top: -50px;
   width: 100vw;
   overflow: hidden;
   position: relative;
 }
+
 
 .carousel .list .item {
   display: flex;
@@ -138,8 +141,8 @@ header a {
 }
 
 .thumbnail .item {
-  width: 150px;
-  height: 220px;
+  width: 180px;
+  height: 260px;
   flex-shrink: 0;
   position: relative;
   cursor: pointer; /* Add pointer cursor for better UX */
@@ -149,7 +152,7 @@ header a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .thumbnail .item .content {
@@ -273,19 +276,21 @@ header a {
 }
 
 @media screen and (max-width: 678px) {
+
   .carousel .list .item {
     flex-direction: column; /* Stack image and text vertically on small screens */
     align-items: center; /* Center items */
     padding: 0 10px; /* Add padding for better spacing */
     justify-content: flex-start; /* Align items to the top */
     margin-top: 50px; /* Add margin to prevent overlap with navbar */
+    padding-bottom: 200px;
   }
 
   .carousel .list .item img {
-    width: 40%; /* Adjust image width for mobile */
+    width: 70%; /* Adjust image width for mobile */
     height: auto;
-    max-height: 50vh; /* Reduce height for mobile */
-    margin-top: 110px; /* Move the image lower */
+    max-height: 60vh; /* Reduce height for mobile */
+    margin-top: 120px; /* Move the image lower */
     order: 1; /* Ensure image stays on top */
     object-fit: cover; /* Ensure the image fits without stretching */
   }
@@ -298,19 +303,19 @@ header a {
   }
 
   .carousel .list .item .content .title {
-    font-size: 2em; /* Smaller font size for mobile */
+    font-size: 3em; /* Smaller font size for mobile */
     margin-bottom: 10px; /* Reduce space below the title */
   }
 
   .carousel .list .item .content .des {
-    font-size: 1em; /* Smaller font size for mobile */
-    margin-bottom: 20px; /* Reduce space below the description */
-    max-height: 100px; /* Limit height for description */
-    overflow-y: auto; /* Add scrollbar if needed */
+    font-size: 1.35em; /* Smaller font size for mobile */
+    margin-bottom: 25px; /* Reduce space below the description */
+    max-height: none; /* Limit height for description */
   }
 
   .carousel .list .item .content .buttons {
     justify-content: center; /* Center buttons */
+    gap: 15px;
   }
 
   /* Thumbnail adjustments for mobile */
@@ -321,6 +326,7 @@ header a {
     width: 90%; /* Adjust width for mobile */
     gap: 10px; /* Reduce gap between thumbnails */
     padding: 5px; /* Reduce padding */
+    
   }
 
   .thumbnail .item {
@@ -331,7 +337,7 @@ header a {
   /* Arrow adjustments for mobile */
   .arrows {
     top: auto; /* Remove top positioning */
-    bottom: 20px; /* Position arrows at the bottom */
+    bottom: -730px; /* Position arrows at the bottom */
     right: 50%;
     transform: translateX(50%); /* Center arrows horizontally */
     width: 100%; /* Full width for better accessibility */

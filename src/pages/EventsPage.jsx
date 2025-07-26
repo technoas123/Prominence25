@@ -69,9 +69,6 @@ const EventsPage = () => {
                 <div className="title">{event.title}</div>
                 <div className="des">{event.description}</div>
                 <div className="buttons">
-                <Link to={`/event/${event.id}`} className="see-more-button">
-                  SEE MORE
-                </Link>
                 </div>
               </div>
             </div>

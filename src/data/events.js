@@ -133,15 +133,15 @@ const events = [
     },
     {
       id: 13,
-      title: "Basketball Tournament",
+      title: " 3D Printing Workshop",
       description:
-        "The hunt is on! Are you ready to uncover the secrets of the campus? 🧭",
-      content: "The hunt is on! Are you ready to uncover the secrets of the campus? 🧭 PROMINANCE 25 invites you to Embark on an Adventure filled with Riddles, Clues, and Mysteries 🔎 TREASURE HUNT 🔎 🕵‍♂Decode the Riddles | 🔑 Crack the Clues | 🏃‍♂ Race to Victory  🗓 Date: March 5, 2025   ⌚ Time:4.30PM  📌Venue: ECE Dept. 💰 Registration Fee: ₹80 🏆 Prize Pool: 800/- The Treasure is Hidden...Will you be the One to Claim it? 🏴‍☠🔥  💫 Do not Miss Out—Follow Us Now",
+        "The Association of ECE & RAI invites you to join a hands-on 3D Printing Workshop and experience the perfect blend of learning and creativity. ",
+      content: "The Association of ECE & RAI invites you to join a hands-on 3D Printing Workshop and experience the perfect blend of learning and creativity.\n \n🔹Time: 10:00 AM \n🔹Speaker: Sabari K Namboothiri (S7 MECH) \n🔹Entry Fee: ₹10/- \n\n Unlock your creative potential and dive into the world of 3D printing. Register today and join us for an insightful session. \n",
       image: "/images/event12.jpg",
-      date: "March 05, 2025",
-      location: "RIT Kottayam",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLScmkdxwcAelIrz4yPws-eUjQZar-hIzt8uOB5je56vP3aic4g/viewform?usp=dialogA",
-    },
+      date: "July 29, 2025",
+      location: "ECE Project Room",
+      link: "https://forms.gle/vuLoms9ywFwzrsmN9",
+    }
 ];
 
 export default events;
