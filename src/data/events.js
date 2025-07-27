@@ -165,7 +165,7 @@ const events = [
       link: "https://forms.gle/DAGTvct8Gmq5UHZ2A",
     },
      {
-      id: 16
+      id: 16,
       title: " I-Hub Robotics ",
       description:
         " Prominence'25 is thrilled to welcome i HUB ROBOTICS as our official Expo Partner, bringing their incredible lineup including TARA Semi Humanoid, Go-2, AMAB Bot, Robotic Arm, and VR Headset ",
