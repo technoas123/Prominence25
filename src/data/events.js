@@ -152,6 +152,17 @@ const events = [
       date: "July 29, 2025",
       location: "ECE 302",
       link: "https://www.instagram.com/p/DMmfRqnBU2L/?igsh=MXF4ZDJteHQxZ3JqMA==",
+    },
+    {
+      id: 15,
+      title: " FIGMA Workshop",
+      description:
+        "Don't miss the Figma Workshop presented by Prominence'25. Dive into the world of UI/UX and learn to design like a pro.",
+      content: "Calling all aspiring designers 🎉 \n Don't miss the Figma Workshop presented by Prominence'25. Dive into the world of UI/UX and learn to design like a pro. \n🔸 Speaker:- R Harikrishnan \n🔸 Time:- 2pm \n Your design journey starts here🌟",
+      image: "/images/event14.jpg",
+      date: "July 29, 2025",
+      location: "ECE Computer Lab",
+      link: "https://forms.gle/DAGTvct8Gmq5UHZ2A",
     }
 ];
 
