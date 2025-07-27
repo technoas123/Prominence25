@@ -141,7 +141,7 @@ const events = [
       date: "July 29, 2025",
       location: "ECE Project Room",
       link: "https://forms.gle/vuLoms9ywFwzrsmN9",
-    }
+    },
     {
       id: 14,
       title: " Gaming Room",
