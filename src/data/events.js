@@ -174,7 +174,18 @@ const events = [
       date: "July 29, 2025",
       location: "ECE Department ",
       link: " https://www.instagram.com/p/DMm_4Y6hVEM/?igsh=MTczdm4yZTRrN3JlYQ== ",
-     }   
+     }, 
+     {
+      id: 17,
+      title: " 2 Days To GO! ",
+      description:
+        " We’re almost there🥳🚀 Only 2 Days Left for Prominence’25. Prominence is happening this July 29th, and it’s going to be a day full of ideas, energy, and amazing people. Don’t miss the chance to be part of something exciting and inspiring...! ",
+      content: " We’re almost there🥳🚀 Only 2 Days Left for Prominence’25. Prominence is happening this July 29th, and it’s going to be a day full of ideas, energy, and amazing people. Don’t miss the chance to be part of something exciting and inspiring...! ",
+      image: "/images/event16.jpg",
+      date: "July 29, 2025",
+      location: "ECE Department ",
+      link: " https://www.instagram.com/p/DMnTrE-BXVp/?igsh=ZGJjNTdwb2Mzbjk2 ",
+     }
 ];
 
 export default events;
