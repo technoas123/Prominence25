@@ -142,6 +142,17 @@ const events = [
       location: "ECE Project Room",
       link: "https://forms.gle/vuLoms9ywFwzrsmN9",
     }
+    {
+      id: 14,
+      title: " Gaming Room",
+      description:
+        "Kick off your journey to virtual gaming glory in the 𝐆𝐀𝐌𝐈𝐍𝐆 𝐀𝐑𝐂𝐀𝐃𝐄 hosted by Prominence'25 in collaboration with Gamers Spot RIT🎮⚽ ",
+      content: "Kick off your journey to virtual gaming glory in the 𝐆𝐀𝐌𝐈𝐍𝐆 𝐀𝐑𝐂𝐀𝐃𝐄 hosted by Prominence'25 in collaboration with Gamers Spot RIT🎮⚽",
+      image: "/images/event13.jpg",
+      date: "July 29, 2025",
+      location: "ECE 302",
+      link: "https://www.instagram.com/p/DMmfRqnBU2L/?igsh=MXF4ZDJteHQxZ3JqMA==",
+    }
 ];
 
 export default events;
