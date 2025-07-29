@@ -185,7 +185,6 @@ const events = [
       date: "July 29, 2025",
       location: "ECE Department ",
       link: " https://www.instagram.com/p/DMnTrE-BXVp/?igsh=ZGJjNTdwb2Mzbjk2 ",
-<<<<<<< HEAD
      },
      {
       id: 18,
