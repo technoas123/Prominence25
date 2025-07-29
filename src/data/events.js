@@ -185,6 +185,83 @@ const events = [
       date: "July 29, 2025",
       location: "ECE Department ",
       link: " https://www.instagram.com/p/DMnTrE-BXVp/?igsh=ZGJjNTdwb2Mzbjk2 ",
+<<<<<<< HEAD
+     },
+     {
+      id: 18,
+      title: " Score big⚽! ",
+      description:
+        "Prominence’25 in collaboration with Gamer's Spot RIT, present a thrilling FIFA Tournament as part of Gaming Arcade ",
+      content: " Score big⚽ Prominence’25 in collaboration with Gamer's Spot RIT, present a thrilling FIFA Tournament as part of Gaming Arcade. \n Spot Registration :-₹10 per head \n Win exciting cash prizes and claim your glory. Don't miss out✨ ",
+      image: "/images/event17.jpg",
+      date: "July 29, 2025",
+      location: "ECE 302 ",
+      link: " https://www.instagram.com/p/DMnTrE-BXVp/?igsh=ZGJjNTdwb2Mzbjk2 ",
+     },
+     {
+      id: 19,
+      title: " Get ready to race🏎 ",
+      description:
+        " The  Association of ECE and RAI presents Gaming Arcade in collaboration with Gamer's Spot RIT. Dominate the Forza Horizon Leaderboard, win exciting cash prizes, and show off your skills. ",
+      content: " Get ready to race🏎 \n The  Association of ECE and RAI presents Gaming Arcade in collaboration with Gamer's Spot RIT. Dominate the Forza Horizon Leaderboard, win exciting cash prizes, and show off your skills. \n 🎟 Spot Registration: ₹10 per head ",
+      image: "/images/event18.jpg",
+      date: "July 29, 2025",
+      location: "ECE 302 ",
+      link: " https://www.instagram.com/p/DMnTrE-BXVp/?igsh=ZGJjNTdwb2Mzbjk2 ",
+     },
+     {
+      id: 20,
+      title: " 🎶 Get ready to groove🎶 ",
+      description:
+        " Prominence’25 is turning up the volume with a live performance by 𝐑𝐈𝐓𝐌! 💃🥳 ",
+      content: " 🎶 Get ready to groove🎶 \n Prominence’25 is turning up the volume with a live performance by 𝐑𝐈𝐓𝐌! 💃🥳 \n 🕕 Time: 6:00 PM \n Brace yourselves for a night filled with music, energy, and pure good vibes. ✨ \n Let the rhythm take over...! ",
+      image: "/images/event19.jpg",
+      date: "July 29, 2025",
+      location: "ECE Department ",
+      link: " https://www.instagram.com/p/DMnTrE-BXVp/?igsh=ZGJjNTdwb2Mzbjk2 ",
+     },
+     {
+      id: 21,
+      title: " 🌟 IDEATHON @ PROMINENCE TECHFEST 2025 🌟 by IEDC RIT! ",
+      description:
+        " Got a game-changing idea? Bring it to life at our IDEATHON, where innovation meets opportunity! Pitch your solution, get mentored, and compete for prizes.Take the first step toward transforming your idea into impact! 🚀 ",
+      content: " 🌟 IDEATHON @ PROMINENCE TECHFEST 2025 🌟 by IEDC RIT! \n Got a game-changing idea? Bring it to life at our IDEATHON, where innovation meets opportunity! Pitch your solution, get mentored, and compete for prizes.Take the first step toward transforming your idea into impact! 🚀 \n ⏰ Time : 4 to 5 PM \n 👥 Team Size: 1–5 members \n 🎯 Themes: Tech, Sustainability, Healthcare, Education & more \n 🏆 Prizes, certificates & mentorship \n 📌Register Now \n ☎For queries contact: \n Gangothri:+918078116828 \n Basil: +918921485904 \n Mariya:+916238679574 ",
+      image: "/images/event20.jpg",
+      date: "July 29, 2025",
+      location: "ECE Department ",
+      link: " https://forms.gle/p44swWg9EkUpvhEU9 ",
+     },
+     {
+      id: 22,
+      title: " 1 Day to GO! ",
+      description:
+        " See you Tommorrow ",
+      image: "/images/event21.jpg",
+      date: "July 29, 2025",
+      location: "ECE Department ",
+      link: " ## ",
+     },
+     {
+      id: 23,
+      title: " Step Into the LASER ROOM ",
+      description:
+        " ✨ Immerse yourself in a thrilling maze of lasers — 💡 Dodge the beams, feel the vibe, and enjoy the experience! ",
+      content: " 🔴 Step Into the LASER ROOM 🔴 Brought to you by PROMINENCE’25 \n Association of ECE and RAI \n ✨ Immerse yourself in a thrilling maze of lasers — 💡 Dodge the beams, feel the vibe, and enjoy the experience! \n 🎭 Fun | Lights | Photo Moments \n ⚠ Touch the light… and it’s game over! \n 📸 Capture the thrill, share the fun! \n 🎉 Whether you're in it for the adventure or just the aesthetic — \n The Laser Room is the perfect stop! ",
+      image: "/images/event24.jpg",
+      date: "July 29, 2025",
+      location: "ECE 302 ",
+      link: " ## ",
+     },
+     {
+      id: 24,
+      title: " 🕵‍♂ SCAVENGER HUNT BY PROMINENCE 🕵‍♀ Are you ready to explore, solve, and WIN? 🔍✨ ",
+      description:
+        " Prominence presents an epic 10-stop solo treasure hunt across campus! Find clues, scan hidden QR codes, and uncover secrets from iHub to the Stairs! 👣🧩 ",
+      content: " 🕵‍♂ SCAVENGER HUNT BY PROMINENCE 🕵‍♀ \n Are you ready to explore, solve, and WIN? 🔍✨ \n Prominence presents an epic 10-stop solo treasure hunt across campus! \n Find clues, scan hidden QR codes, and uncover secrets from iHub to the Stairs! 👣🧩 \n 🎁 Prize: A mouth-watering Quarter Manthi awaits the sharpest sleuth! \n 📍 Start Point: Check the Actionbound app & follow the trail! \n 🕑 No Time Limit — but speed might just make you the winner 😉 \n 🚨 Finish the bound, and we’ll contact the winner directly! \n So grab your phone, trust your instincts, and let the hunt begin! ",
+      image: "/images/event23.jpg",
+      date: "July 29, 2025",
+      location: "ECE Department ",
+      link: " https://www.instagram.com/p/DMrZvnnh-jS/?igsh=d3dwMmJlMThzemZm ",
      }
 ];
 
